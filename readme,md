@@ -1,0 +1,44 @@
+ FeedPulse — AI-Powered Product Feedback Platform
+
+FeedPulse is a full-stack web application that lets teams collect product feedback and uses Google Gemini AI to automatically categorise, prioritise, and summarise them.
+
+ Tech Stack
+- **Frontend:** Next.js 14, TypeScript, Tailwind CSS
+- **Backend:** Node.js, Express, TypeScript
+- **Database:** MongoDB Atlas
+- **AI:** Google Gemini 1.5 Flash
+
+ How to Run Locally
+
+ Backend
+1. cd backend
+2. npm install
+3. Create .env file with:
+   - MONGO_URI=your_mongodb_uri
+   - GEMINI_API_KEY=your_gemini_key
+   - JWT_SECRET=feedpulse_super_secret_123
+   - PORT=4000
+4. npm run dev
+
+ Frontend
+1. cd frontend
+2. npm install
+3. npm run dev
+4. Open http://localhost:3000
+
+ Admin Login
+- Email: admin@feedpulse.com
+- Password: admin123
+
+ Features
+- Public feedback submission form with validation
+- AI analysis using Gemini (sentiment, priority, tags, summary)
+- Protected admin dashboard with filters, search, sorting
+- Status management (New → In Review → Resolved)
+- AI weekly summary of top themes
+
+ What I'd Build Next
+- Email notifications when feedback status changes
+- Analytics charts showing feedback trends over time
+- User authentication for submitters
+- Mobile app version
